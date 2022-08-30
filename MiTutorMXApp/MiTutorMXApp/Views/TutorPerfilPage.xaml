@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MiTutorMXApp.Views.TutorPerfilPage">
+    <ContentPage.Content>
+        <StackLayout Spacing="0">
+            <Image Source="stock_bg.png" HeightRequest="70" Aspect="AspectFill"></Image>
+
+            <StackLayout Orientation="Horizontal">
+                <Frame  HeightRequest="60" WidthRequest="60" CornerRadius="30" HorizontalOptions="Start" VerticalOptions="Center" Margin="10,-80,0,0" Padding="0" BackgroundColor="Pink">
+                    <Label Text="M" FontAttributes="Bold" FontSize="28" TextColor="White" HorizontalOptions="Center" VerticalOptions="Center" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" />
+                </Frame>
+
+                <StackLayout Spacing="0" Margin="20,2">
+                    <Label Text="Azucena Miro Lopez" FontAttributes="Bold" FontSize="18" TextColor="Black"/>
+                    <Label Text="Estudiante Universitario" FontAttributes="Bold" FontSize="12" TextColor="Gray"/>
+                    <Label Text="Universidad de Mexico" FontAttributes="Bold" FontSize="12" TextColor="Gray"/>
+                    <Label Text="Inglés, Matematicas,Español" FontAttributes="Bold" FontSize="12" TextColor="Gray"/>
+                    <Label Text="500 Tutorias completadas" FontAttributes="Bold" FontSize="12" TextColor="Gray"/>
+                </StackLayout>
+
+                <StackLayout>
+                    <Grid Padding="-20">
+                        <Image Source="rating.png"/>
+                    </Grid>
+                    <Grid>
+                        <Button HeightRequest="20" CornerRadius="5" BackgroundColor="#76C72F"></Button>
+                        <Label Text="Solicitar" TextColor="White" FontAttributes="Bold" FontSize="12" HorizontalOptions="Center" VerticalOptions="Center"></Label>
+                    </Grid>
+                </StackLayout>
+
+            </StackLayout>
+
+            <Rectangle BackgroundColor="LightGray" HeightRequest="15"></Rectangle>
+
+            <StackLayout>
+                <Label Text="Opiniones" Margin="15,5,0,0" FontAttributes="Bold" FontSize="18" TextColor="Black"/>
+
+                <Frame Margin="-5">
+                    <StackLayout Orientation="Horizontal">
+                        <Frame  HeightRequest="40" WidthRequest="45" CornerRadius="800" HorizontalOptions="Start" VerticalOptions="Center" Margin="0,0,0,0" Padding="0" BackgroundColor="#FFB800">
+                            <Label Text="P" TextColor="White" HorizontalOptions="Center" VerticalOptions="Center" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" />
+                        </Frame>
+
+
+                        <StackLayout Spacing="0">
+                            <Label Text="Josue Olmedo" FontAttributes="Bold" FontSize="14" TextColor="Black"/>
+                            <!--<Image Source="rating.png"></Image>-->
+                            <Label Text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ac mi cursus quam sodales laoreet." FontSize="10"></Label>
+                        </StackLayout>
+
+
+                    </StackLayout>
+                </Frame>
+            </StackLayout>
+
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

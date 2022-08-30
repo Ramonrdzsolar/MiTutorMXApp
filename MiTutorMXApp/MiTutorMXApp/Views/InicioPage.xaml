@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MiTutorMXApp.Views.InicioPage">
+
+    <Shell.TitleView>
+        <StackLayout
+          Orientation="Horizontal"
+          VerticalOptions="Center"
+          Spacing="10">
+            <!--<Image
+               Source="icon_about.png"
+               Aspect="AspectFit" />-->
+
+            <Frame HeightRequest="40" WidthRequest="40" CornerRadius="20" HorizontalOptions="Start" VerticalOptions="Center" Margin="0" Padding="0" BackgroundColor="#FFB800">
+                <Label Text="P" TextColor="White" HorizontalOptions="Center" VerticalOptions="Center" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" />
+            </Frame>
+
+            <StackLayout>
+                <Label
+               Text="Miercoles, Junio 9"
+               FontSize="12"
+               TextColor="Gray"
+                    Margin="0,4,0,0"
+                    Padding="0,5,0,0"/>
+                <Label
+
+               Text="Pedro De Leon Martinez"
+               FontSize="16"
+               FontAttributes="Bold"
+               TextColor="Black"
+                    Margin="0"
+                    Padding="0"
+                />
+            </StackLayout>
+
+
+        </StackLayout>
+    </Shell.TitleView>
+
+    <ContentPage.Content>
+        <StackLayout>
+
+            <Frame  CornerRadius="15" 
+           HorizontalOptions="Center" 
+           VerticalOptions="Start"
+           HasShadow="True"
+           IsClippedToBounds="True"
+                   WidthRequest="200"
+           Padding="0" Margin="0,25,0,0" Background="#D9D9D9">
+                <StackLayout Padding="0,3,0,3"   
+                         Orientation="Horizontal" 
+                         HorizontalOptions="Center"
+                         Background="#D9D9D9"  HeightRequest="30" >
+                    <Button WidthRequest="94" TextColor="White" CornerRadius="15" FontSize="12" FontAttributes="Bold" Padding="0" Text="Hoy" BackgroundColor="#76C72F"></Button>
+                    <Button WidthRequest="94" TextColor="Black" CornerRadius="15" FontSize="12" FontAttributes="Bold" Padding="0"  Text="Horario" BackgroundColor="#D9D9D9"></Button>
+                </StackLayout>
+            </Frame>
+
+
+            <Label Padding="15,15,0,0" FontSize="16" Text="Tus clases de hoy" FontAttributes="Bold" TextColor="Black"></Label>
+
+            <StackLayout>
+                <Frame CornerRadius="8" 
+                       HorizontalOptions="Center" 
+                       VerticalOptions="Start"
+                       HasShadow="True"
+                       IsClippedToBounds="True"
+                       Padding="0"
+                       Margin="15"
+                       BackgroundColor="#D9D9D9">
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition></ColumnDefinition>
+                            <ColumnDefinition></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+
+                        <Label Padding="10,10,0,0" Grid.Row="0" Grid.Column="0" Text="Calculo II" TextColor="Black" FontAttributes="Bold"></Label>
+                        <Label Padding="45,10,0,0" Grid.Row="0" Grid.Column="1" Text="2:00 PM - 3:00 PM" TextColor="Black" FontAttributes="Bold"></Label>
+                        <Label Padding="10,00,0,0" Grid.Row="1" Grid.Column="0" Text="Tutor: Sebastian Perez Lira" TextColor="Black" FontAttributes="Bold"></Label>
+                    </Grid>
+                </Frame>
+            </StackLayout>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

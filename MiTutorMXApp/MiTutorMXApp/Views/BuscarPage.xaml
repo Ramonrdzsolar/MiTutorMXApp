@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MiTutorMXApp.Views.BuscarPage">
+
+    <Shell.TitleView>
+        <StackLayout Orientation="Horizontal">
+            <Image Source="back_icon.png"  Aspect="AspectFit" Margin="0,18"/>
+            <Entry Placeholder="Escribir Materia" WidthRequest="350" ></Entry>
+        </StackLayout>
+    </Shell.TitleView>
+
+
+    <ContentPage.Content>
+
+
+        <StackLayout>
+            <Frame x:Name="frame" Visual="Material">
+                <Frame.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                </Frame.GestureRecognizers>
+
+                <StackLayout Orientation="Horizontal" Margin="0" Padding="0">
+                    <Frame  HeightRequest="40" WidthRequest="40" CornerRadius="20" HorizontalOptions="Start" VerticalOptions="Center" Margin="0" Padding="0" BackgroundColor="Blue">
+                        <Label Text="A" TextColor="White" HorizontalOptions="Center" VerticalOptions="Center" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" />
+                    </Frame>
+                    <StackLayout Spacing="0">
+                        <Label Text="Azucena Miro Lopez" FontAttributes="Bold" FontSize="14" TextColor="Black"/>
+                        <Label Text="★★★★★" FontAttributes="Bold" FontSize="14" TextColor="Gold"/>
+                        <Label Text="Inglés, Matematicas,Español" FontSize="12"></Label>
+                    </StackLayout>
+
+                    <!--<Grid Padding="0,0,0,0">
+                        <Image Source="rating.png"/>
+                    </Grid>-->
+                </StackLayout>
+            </Frame>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

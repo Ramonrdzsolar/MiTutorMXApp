@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MiTutorMXApp.Views.ForoPage">
+
+    <Shell.TitleView>
+        <StackLayout Orientation="Horizontal">
+            <Image Source="back_icon.png" Aspect="AspectFit" Margin="0,15"/>
+            <Entry Placeholder="Escribir Materia" WidthRequest="350"></Entry>
+        </StackLayout>
+    </Shell.TitleView>
+
+    <ContentPage.Content>
+        <StackLayout>
+            <Frame >
+                <StackLayout Orientation="Horizontal" Margin="0" Padding="0">
+                    <Frame  HeightRequest="40" WidthRequest="40" CornerRadius="20" HorizontalOptions="Start" VerticalOptions="Center" Margin="0" Padding="0" BackgroundColor="DarkRed">
+                        <Label Text="I" FontAttributes="Bold" TextColor="White" HorizontalOptions="Center" VerticalOptions="Center" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" />
+                    </Frame>
+                    <StackLayout>
+                        <Label Text="Ingles Basico" FontAttributes="Bold" FontSize="14" TextColor="Black"/>
+                        <Label Text="53 publicaciones" FontSize="10"></Label>
+                    </StackLayout>
+                </StackLayout>
+            </Frame>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

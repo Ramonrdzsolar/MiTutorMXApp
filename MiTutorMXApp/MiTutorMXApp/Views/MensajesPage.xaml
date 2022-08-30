@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MiTutorMXApp.Views.MensajesPage">
+    
+    <Shell.TitleView>
+        <StackLayout Orientation="Horizontal">
+            <Frame  HeightRequest="30" WidthRequest="30" CornerRadius="20" HorizontalOptions="Start" VerticalOptions="Center" Margin="0" Padding="0" BackgroundColor="#FFB800">
+                <Label Text="P" FontAttributes="Bold" TextColor="White" HorizontalOptions="Center" VerticalOptions="Center" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" />
+            </Frame>
+            <Label Text="Chats" FontSize="22" Margin="0" Padding="0" TextColor="Black" FontAttributes="Bold" VerticalTextAlignment="Center"/>
+        </StackLayout>
+
+    </Shell.TitleView>
+
+    <ContentPage.Content>
+        <StackLayout>
+            <Frame >
+                <StackLayout Orientation="Horizontal">
+                    <Frame  HeightRequest="40" WidthRequest="40" CornerRadius="20" HorizontalOptions="Start" VerticalOptions="Center" Margin="0" Padding="0" BackgroundColor="Green">
+                        <Label Text="R" FontAttributes="Bold" TextColor="White" HorizontalOptions="Center" VerticalOptions="Center" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" />
+                    </Frame>
+                    <StackLayout Spacing="0">
+                        <Label Text="Rufino Cerezo Marquez" FontAttributes="Bold" FontSize="14" TextColor="Black"/>
+                        <Label Text="Tengo una duda de como conjugar...      • 9:15 am   " FontSize="12"></Label>
+                    </StackLayout>
+                </StackLayout>
+            </Frame>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
